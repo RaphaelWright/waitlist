@@ -1,19 +1,5 @@
 "use client";
 
-/* eslint-disable @typescript-eslint/no-namespace */
-declare global {
-  namespace JSX {
-    interface IntrinsicElements {
-      "ion-icon": {
-        name: string;
-        class?: string;
-        style?: React.CSSProperties;
-        "aria-hidden"?: string;
-      };
-    }
-  }
-}
-
 export default function IonIcon({
   name,
   className,
@@ -21,5 +7,7 @@ export default function IonIcon({
   name: string;
   className?: string;
 }) {
-  return <ion-icon name={name} class={className} aria-hidden="true" />;
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const Tag = "ion-icon" as any;
+  return <Tag name={name} class={className} aria-hidden="true" />;
 }
