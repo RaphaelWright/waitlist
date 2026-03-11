@@ -8,8 +8,6 @@ export default function Hero() {
   const hasAnimated = useRef(false);
 
   useEffect(() => {
-    // React StrictMode double-invokes effects in development.
-    // The ref guard ensures the animation sequence runs exactly once.
     if (hasAnimated.current) return;
     hasAnimated.current = true;
 
@@ -29,10 +27,11 @@ export default function Hero() {
     };
 
     reveal(".hero-eyebrow",    100);
-    revealAll(".hero-word-inner", 260, 140);
-    reveal(".hero-sub-group",  260 + 3 * 140 + 80);
+    revealAll(".hero-word-inner", 260, 160);
+    reveal(".hero-sub-group",  260 + 3 * 160 + 60);
+    reveal(".hero-stats",      260 + 3 * 160 + 300);
     reveal(".hero-image-wrap", 180);
-    reveal(".hero-badge",      1300);
+    reveal(".hero-badge",      1500);
 
     return () => ids.forEach(clearTimeout);
   }, []);
@@ -42,30 +41,52 @@ export default function Hero() {
       <div className="hero-bg" aria-hidden="true" />
 
       <div className="hero-content">
-        <p className="hero-eyebrow" aria-hidden="true">
-          Nairobi · Africa · Now
+        <p className="hero-eyebrow">
+          Ghana · Kenya · Nigeria · South Africa
         </p>
 
-        <h1 className="hero-headline" aria-label="The job was always here.">
+        <h1 className="hero-headline" aria-label="Find. Hire. Pay. huzlla.">
           <span className="hero-word hero-hl-1">
-            <span className="hero-word-inner">The job</span>
+            <span className="hero-word-inner">Find.</span>
           </span>
           <span className="hero-word hero-hl-2">
-            <span className="hero-word-inner">was always</span>
+            <span className="hero-word-inner">Hire. Pay.</span>
           </span>
           <span className="hero-word hero-hl-3">
-            <span className="hero-word-inner">here.</span>
+            <span className="hero-word-inner">huzlla.</span>
           </span>
         </h1>
 
         <div className="hero-sub-group">
           <div className="hero-pill">
             <span className="hero-pill-dot" aria-hidden="true" />
-            Africa&apos;s on-demand labor platform
+            Africa&apos;s on-demand labour platform — verified workers, escrow-protected pay, GPS check-in. Launching across 4 markets.
           </div>
-          <Link href="#waitlist" className="hero-cta">
-            Get Early Access
-          </Link>
+          <div style={{ display: "flex", gap: "1rem", flexWrap: "wrap", alignItems: "center" }}>
+            <Link href="#waitlist" className="hero-cta">
+              Get Early Access
+            </Link>
+            <a href="#solution" className="hero-cta-ghost">
+              See how it works
+            </a>
+          </div>
+        </div>
+
+        <div className="hero-stats" aria-label="Platform stats">
+          <div className="hero-stat">
+            <span className="hero-stat-val">10</span>
+            <span className="hero-stat-lbl">job categories</span>
+          </div>
+          <div className="hero-stat-div" aria-hidden="true" />
+          <div className="hero-stat">
+            <span className="hero-stat-val">4</span>
+            <span className="hero-stat-lbl">markets launching</span>
+          </div>
+          <div className="hero-stat-div" aria-hidden="true" />
+          <div className="hero-stat">
+            <span className="hero-stat-val">0%</span>
+            <span className="hero-stat-lbl">worker deductions</span>
+          </div>
         </div>
       </div>
 
@@ -73,7 +94,7 @@ export default function Hero() {
         <div className="hero-image-wrap">
           <Image
             src="https://images.unsplash.com/photo-1589939705384-5185137a7f0f?q=80&w=1170&auto=format&fit=crop"
-            alt="Kenyan fundi worker — skilled, ready, reliable"
+            alt="African fundi worker — skilled, ready, reliable"
             fill
             style={{ objectFit: "cover", objectPosition: "center top" }}
             priority
@@ -83,10 +104,10 @@ export default function Hero() {
         </div>
       </div>
 
-      <div className="hero-badge" aria-label="240+ workers already waiting">
-        <span className="hero-badge-num">240+</span>
-        workers &amp; employers
-        <br />already in
+      <div className="hero-badge" aria-label="Workers receive 100% of agreed pay">
+        <span className="hero-badge-num">100%</span>
+        of pay goes
+        <br />to the worker
       </div>
 
       <div className="hero-scroll-hint" aria-hidden="true">

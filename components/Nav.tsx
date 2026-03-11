@@ -4,13 +4,13 @@ import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 
 export default function Nav() {
-  const [isDark, setIsDark] = useState(false);
+  const [isDark, setIsDark] = useState(true); // hero is dark midnight by default
   const sentinelRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     // Watch the dark sections — when one intersects the nav, flip to light text
     const darkSections = document.querySelectorAll(
-      ".tension, .categories, .trust, .footer"
+      ".hero, .tension, .categories, .trust, .footer"
     );
 
     const observer = new IntersectionObserver(

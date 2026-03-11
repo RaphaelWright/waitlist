@@ -13,9 +13,9 @@ export default function ScrollAnimations() {
     const SELECTORS = [
       ".tension-headline",
       ".tension-stat",
-      ".problem-card",
+      ".problem-row",
       ".step",
-      ".cat-tile",
+      ".cat-name-item",
       ".pillar",
       ".trust-right",
       ".reveal-clip",

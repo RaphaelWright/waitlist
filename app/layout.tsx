@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Space_Mono, Ubuntu } from "next/font/google";
+import { Space_Mono, Ubuntu, Fraunces, Syne, Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
 
 const spaceMono = Space_Mono({
@@ -17,14 +17,39 @@ const ubuntu = Ubuntu({
   display: "swap",
 });
 
+const fraunces = Fraunces({
+  weight: ["400", "600", "700", "900"],
+  style: ["normal", "italic"],
+  subsets: ["latin"],
+  variable: "--font-fraunces",
+  display: "swap",
+});
+
+// Display / headlines — sharp, geometric, professional
+const syne = Syne({
+  weight: ["400", "600", "700", "800"],
+  subsets: ["latin"],
+  variable: "--font-syne",
+  display: "swap",
+});
+
+// Body / UI — clean, humanist, highly readable
+const jakarta = Plus_Jakarta_Sans({
+  weight: ["400", "500", "600", "700"],
+  style: ["normal", "italic"],
+  subsets: ["latin"],
+  variable: "--font-jakarta",
+  display: "swap",
+});
+
 export const metadata: Metadata = {
-  title: "huzlla — The job was always here.",
+  title: "huzlla — Work gets done right.",
   description:
-    "Africa's first on-demand labor platform. Connecting Nairobi's best fundis, cleaners, guards, and riders with employers who need reliable help now.",
+    "Africa's on-demand labour platform. ID-verified workers, escrow-protected pay, GPS check-in. Launching across Ghana, Kenya, Nigeria, and South Africa.",
   openGraph: {
-    title: "huzlla — The job was always here.",
+    title: "huzlla — Work gets done right.",
     description:
-      "Africa's first on-demand labor platform. Done by noon. Paid by 5.",
+      "Verified workers. Escrow pay. GPS check-in. Done by noon. Paid by 5.",
     type: "website",
   },
 };
@@ -36,22 +61,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <head>
-        {/* Rethink Sans — loaded via Google Fonts link (not yet in next/font) */}
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Rethink+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap"
-          rel="stylesheet"
-        />
-      </head>
       <body
-        className={`${spaceMono.variable} ${ubuntu.variable}`}
-        style={{ fontFamily: "'Rethink Sans', var(--font-rethink, sans-serif)" }}
+        className={`${spaceMono.variable} ${ubuntu.variable} ${fraunces.variable} ${syne.variable} ${jakarta.variable}`}
       >
         {/* Global grain texture */}
         <div className="grain-overlay" aria-hidden="true" />
         {children}
+        {/* Ionicons */}
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js" />
+        <script noModule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js" />
       </body>
     </html>
   );

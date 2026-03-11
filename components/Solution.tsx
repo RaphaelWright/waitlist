@@ -2,31 +2,33 @@ const steps = [
   {
     num: "01",
     icon: "📋",
-    title: "Post the job in 60 seconds",
-    body: "Tell us what you need, where, and when. No long forms. No agency calls. Just tap and go.",
+    title: "Post a job in 60 seconds",
+    body: "Set the role, location, date, and pay rate. Mark it urgent for same-day fills. Save it as a template to repost in one tap next time.",
   },
   {
     num: "02",
     icon: "🤝",
-    title: "Match with a vetted worker",
-    body: "Verified ID. Rated by previous employers. You see their history before they knock on your door.",
+    title: "Match with a verified worker",
+    body: "Every applicant is ID-verified and rated by past employers. Review their profile, distance, and job history — then accept with one tap.",
   },
   {
     num: "03",
     icon: "✅",
-    title: "Pay safe. Work done.",
-    body: "Escrow holds the money until the job's complete. Worker gets paid. You get proof. Everyone wins.",
+    title: "Pay safe. Work confirmed.",
+    body: "Pay into escrow before the job starts. GPS check-in records arrival. Funds release automatically when both sides confirm — or after 24 hours if you don't dispute.",
   },
 ];
 
 export default function Solution() {
   return (
-    <section aria-label="How huzlla works">
+    <section id="solution" aria-label="How huzlla works">
       <div className="solution-header">
-        <p className="section-label">How it works</p>
-        <h2 className="section-title" style={{ marginBottom: 0 }}>
-          Done by noon. Paid by 5.
+        <h2 className="solution-headline reveal-up">
+          Done by noon.<br />Paid by 5.
         </h2>
+        <p className="solution-sub reveal-up" style={{ transitionDelay: "0.12s" }}>
+          Post a job. Get matched with a vetted worker. Pay safe when it&apos;s done.
+        </p>
       </div>
 
       <div className="solution-steps">

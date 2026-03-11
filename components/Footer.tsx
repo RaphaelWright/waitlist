@@ -22,7 +22,7 @@ export default function Footer() {
         </li>
       </ul>
 
-      <p className="footer-made">Made for Kenya 🇰🇪</p>
+      <p className="footer-made">Ghana · Kenya · Nigeria · South Africa</p>
     </footer>
   );
 }
