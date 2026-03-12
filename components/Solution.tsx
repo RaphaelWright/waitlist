@@ -21,7 +21,7 @@ const steps = [
 
 export default function Solution() {
   return (
-    <section id="solution" aria-label="How huzlla works">
+    <section id="solution" aria-label="How Huzlla works">
       <div className="solution-header">
         <h2 className="solution-headline reveal-up">
           Done by noon.<br />Paid by 5.

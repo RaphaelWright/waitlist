@@ -43,11 +43,11 @@ const jakarta = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "huzlla — Work gets done right.",
+  title: "Huzlla — Work gets done right.",
   description:
     "Africa's on-demand labour platform. ID-verified workers, escrow-protected pay, GPS check-in. Launching across Ghana, Kenya, Nigeria, and South Africa.",
   openGraph: {
-    title: "huzlla — Work gets done right.",
+    title: "Huzlla — Work gets done right.",
     description:
       "Verified workers. Escrow pay. GPS check-in. Done by noon. Paid by 5.",
     type: "website",

@@ -3,8 +3,8 @@ import Link from "next/link";
 export default function Footer() {
   return (
     <footer className="footer" aria-label="Site footer">
-      <Link href="/" className="footer-logo" aria-label="huzlla home">
-        huzlla
+      <Link href="/" className="footer-logo" aria-label="Huzlla home">
+        Huzlla
       </Link>
 
       <ul className="footer-links">
@@ -12,7 +12,7 @@ export default function Footer() {
           <a href="#waitlist">Join Waitlist</a>
         </li>
         <li>
-          <a href="mailto:hello@huzlla.co">Contact</a>
+          <a href="mailto:hello@Huzlla.co">Contact</a>
         </li>
         <li>
           <a href="#">Privacy</a>

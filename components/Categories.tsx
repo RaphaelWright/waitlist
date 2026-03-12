@@ -13,7 +13,7 @@ const categories = [
 
 export default function Categories() {
   return (
-    <section className="categories" aria-label="Job categories on huzlla">
+    <section className="categories" aria-label="Job categories on Huzlla">
       <div className="categories-header">
         <h2 className="categories-title reveal-up">
           Every trade.

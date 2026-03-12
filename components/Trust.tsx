@@ -39,7 +39,7 @@ export default function Trust() {
             <span>optional.</span>
           </h2>
           <p className="trust-body reveal-up" style={{ transitionDelay: "0.35s" }}>
-            Every worker on huzlla is ID-verified, GPS-tracked at check-in, and rated after every job.
+            Every worker on Huzlla is ID-verified, GPS-tracked at check-in, and rated after every job.
             Every payment is protected by escrow until both sides confirm. Workers keep 100% of their agreed rate — always.
           </p>
 

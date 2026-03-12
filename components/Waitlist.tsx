@@ -18,9 +18,9 @@ export default function Waitlist() {
             className="waitlist-sub reveal-up"
             style={{ transitionDelay: "0.15s" }}
           >
-            huzlla is launching across Ghana, Kenya, Nigeria, and South Africa.
+            Huzlla is launching across Ghana, Kenya, Nigeria, and South Africa.
             Early access means priority placement, zero platform fees for your
-            first month, and a direct line to shape how huzlla works for you.
+            first month, and a direct line to shape how Huzlla works for you.
           </p>
           <div
             className="waitlist-proof reveal-up"
@@ -50,7 +50,7 @@ export default function Waitlist() {
               frameBorder={0}
               marginHeight={0}
               marginWidth={0}
-              title="huzlla Waitlist Form"
+              title="Huzlla Waitlist Form"
               loading="lazy"
             />
           </div>

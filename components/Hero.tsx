@@ -45,7 +45,7 @@ export default function Hero() {
           Ghana · Kenya · Nigeria · South Africa
         </p>
 
-        <h1 className="hero-headline" aria-label="Find. Hire. Pay. huzlla.">
+        <h1 className="hero-headline" aria-label="Find. Hire. Pay. Huzlla.">
           <span className="hero-word hero-hl-1">
             <span className="hero-word-inner">Find.</span>
           </span>
@@ -53,7 +53,7 @@ export default function Hero() {
             <span className="hero-word-inner">Hire. Pay.</span>
           </span>
           <span className="hero-word hero-hl-3">
-            <span className="hero-word-inner">huzlla.</span>
+            <span className="hero-word-inner">Huzlla.</span>
           </span>
         </h1>
 

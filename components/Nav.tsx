@@ -35,8 +35,8 @@ export default function Nav() {
       style={{ color: isDark ? "var(--bg)" : "var(--dark)" }}
       aria-label="Main navigation"
     >
-      <Link href="/" className="nav-logo" aria-label="huzlla home">
-        huzlla
+      <Link href="/" className="nav-logo" aria-label="Huzlla home">
+        Huzlla
         <span className="nav-dot" aria-hidden="true" />
       </Link>
       <Link href="#waitlist" className="nav-cta">
