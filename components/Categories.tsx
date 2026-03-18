@@ -30,7 +30,8 @@ export default function Categories() {
       <ul className="cat-name-list" role="list">
         {categories.map((name, i) => (
           <li key={name} className="cat-name-item cat-item" role="listitem"
-            style={{ transitionDelay: `${i * 0.05}s` }}>
+            style={{ transitionDelay: `${i * 0.05}s`, cursor: "pointer" }}
+            onClick={() => document.getElementById("waitlist")?.scrollIntoView({ behavior: "smooth" })}>
             <span className="cat-name-num" aria-hidden="true">
               {String(i + 1).padStart(2, "0")}
             </span>
