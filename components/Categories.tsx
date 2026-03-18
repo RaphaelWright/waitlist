@@ -1,3 +1,5 @@
+"use client";
+
 const categories = [
   "Security",
   "Cleaning",
